@@ -64,12 +64,12 @@ CREATE TABLE SpotifyClone.Reproducoes(
   FOREIGN KEY (musica_id) REFERENCES SpotifyClone.Musicas (musica_id)  
  ) engine = InnoDB;
 
-INSERT INTO SpotifyClone.Planos (plano_id, plano, valor_plano)
+INSERT INTO SpotifyClone.Planos (plano, valor_plano)
 VALUES
-	(1, 'gratuito', 0.00),
-	(2, 'universitário', 5.99),
-	(3, 'pessoal', 6.99),
-  (4, 'familiar', 7.99);
+    ('gratuito', 0.00),
+    ('familiar', 7.99),
+    ('universitário', 5.99),
+    ('pessoal', 6.99);
 
 
   INSERT INTO SpotifyClone.Artistas (nome)
@@ -93,6 +93,7 @@ VALUES
     ('Christopher Alexander', 85, 4, '2019-06-05'),
     ('Judith Butler', 45, 4, '2020-05-13'),
     ('Jorge Amado', 58, 4, '2017-02-17');
+    
 
   INSERT INTO SpotifyClone.Album (nome_album, ano_lancamento, artistas_id)
   VALUES
