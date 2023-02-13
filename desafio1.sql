@@ -64,12 +64,12 @@ CREATE TABLE SpotifyClone.Reproducoes(
   FOREIGN KEY (musica_id) REFERENCES SpotifyClone.Musicas (musica_id)  
  ) engine = InnoDB;
 
-INSERT INTO SpotifyClone.Planos (plano, valor_plano)
+INSERT INTO SpotifyClone.Planos (plano_id, plano, valor_plano)
 VALUES
-	('gratuito', 0.00),
-	('universitário', 5.99),
-	('pessoal', 6.99),
-    ('familiar', 7.99);
+	(1, 'gratuito', 0.00),
+	(2, 'universitário', 5.99),
+	(3, 'pessoal', 6.99),
+  (4, 'familiar', 7.99);
 
 
   INSERT INTO SpotifyClone.Artistas (nome)
